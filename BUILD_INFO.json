@@ -1,0 +1,9 @@
+{
+  "project": "TracePilot",
+  "version": "1.0.0",
+  "default_seed": 42,
+  "windows_offline_target": "CPython 3.12 x64 / win_amd64",
+  "runtime_lock_sha256": "714558de9f0e31b679cb769c4b55092411ff4b415314a5d5b0e75bcb65a62169",
+  "reproducible_export": "tracepilot-stable-v1",
+  "windows_hardware_tested": false
+}

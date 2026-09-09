@@ -1,0 +1,53 @@
+TRACEPILOT - COMPLETE HACKATHON PROJECT
+Problem statement JP-009: Automated REST API Testing & Anomaly Diagnosis
+
+WINDOWS (recommended presentation setup)
+1. Install Python 3.12, 64-bit/x64. Select Add Python to PATH.
+2. Extract the ENTIRE ZIP into a writable folder.
+3. Double-click START_WINDOWS.bat.
+4. Dashboard: http://127.0.0.1:8000
+5. REST API documentation: http://127.0.0.1:8000/docs
+
+The ZIP includes all pinned Windows Python 3.12 x64 dependencies.
+After Python is installed, Windows setup and the demo work offline.
+The Python interpreter itself is not bundled.
+
+MAC / LINUX
+Open a terminal in this folder and run: bash start_mac_linux.sh
+First setup on Mac/Linux needs internet. Uses the same package versions.
+
+PROVE IT REPEATS
+Double-click VERIFY_WINDOWS.bat.
+This compares two faulty runs and two repaired runs with the reference files.
+The seed is 42. Reproducible JSON excludes clock time, UUIDs, history, and ML.
+
+DEMO FLOW
+Learn baseline -> Run faults enabled -> Inspect evidence -> Run repaired
+-> Run history -> Compare -> Export report
+
+EXPECTED RESULTS
+Faults enabled: 3 passing / 8 failing cases (55 requests).
+Repaired: 11 passing / 0 failing cases (55 requests).
+Learn baseline: 11 passing cases (220 requests).
+A learned ML slowdown appears as a separate advisory.
+
+WHAT TO READ
+ docs/PROJECT_MANUAL.pdf       Complete 14-page project manual
+README.md                     Setup and project overview
+ docs/PROJECT_REPORT.md        Submission report and architecture
+ docs/PITCH_AND_DEMO.md        Three-minute script and judge questions
+ docs/REST_API.md              REST API examples and endpoint table
+ docs/VALIDATION.md            Executed checks and Windows test limitations
+ docs/DEMO_BROKEN_REPORT.html  A generated faulty-run report
+ docs/DEMO_FIXED_REPORT.html   A generated repaired-run report
+
+TECHNOLOGY
+Python, FastAPI, HTTPX, JSON/XML parsers, SQLite, scikit-learn.
+OpenAPI and Postman JSON import support. No paid LLM API is required.
+
+IMPORTANT TIMING DISTINCTION
+Seeded demo service times are simulated and disclosed for repeatability.
+Real elapsed time is recorded separately. Live API runs use actual HTTP time.
+Only test APIs you own or are authorized to test.
+
+Run TEST_WINDOWS.bat on your presentation laptop before the event.
